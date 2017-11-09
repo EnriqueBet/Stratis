@@ -1,0 +1,164 @@
+[
+    {
+        "events_per_ip": [
+            {
+                "ip": "96.15.39.100",
+                "total_time": "24335987",
+                "start_time": "2017-11-06 00:00:00.000000",
+                "end_time": "2018-08-15 00:00:00.000000",
+                "total_direction_time": {
+                    "up": "4958023",
+                    "down": "4914368",
+                    "left": "4841863",
+                    "right": "4468059"
+                },
+                "total_idle_time": "5153674",
+                "total_events": "1066"
+            }
+        ]
+    },
+    {
+        "events_per_ip": [
+            {
+                "ip": "10.0.1.2",
+                "total_time": "27229182",
+                "start_time": "2017-11-06 00:00:00.000000",
+                "end_time": "2018-09-17 00:00:00.000000",
+                "total_direction_time": {
+                    "up": "5429824",
+                    "down": "5578093",
+                    "left": "4941560",
+                    "right": "5726095"
+                },
+                "total_idle_time": "5553610",
+                "total_events": "1213"
+            }
+        ]
+    },
+    {
+        "events_per_ip": [
+            {
+                "ip": "127.0.0.1",
+                "total_time": "26198863",
+                "start_time": "2017-11-06 00:00:00.000000",
+                "end_time": "2018-09-05 00:00:00.000000",
+                "total_direction_time": {
+                    "up": "5904606",
+                    "down": "4979332",
+                    "left": "5003026",
+                    "right": "4727652"
+                },
+                "total_idle_time": "5584247",
+                "total_events": "1129"
+            }
+        ]
+    },
+    {
+        "events_per_ip": [
+            {
+                "ip": "22.213.31.148",
+                "total_time": "29974759",
+                "start_time": "2017-11-06 00:00:00.000000",
+                "end_time": "2018-10-19 00:00:00.000000",
+                "total_direction_time": {
+                    "up": "6545928",
+                    "down": "5576808",
+                    "left": "5301400",
+                    "right": "6407137"
+                },
+                "total_idle_time": "6143486",
+                "total_events": "1301"
+            }
+        ]
+    },
+    {
+        "events_per_ip": [
+            {
+                "ip": "192.168.1.45",
+                "total_time": "25157530",
+                "start_time": "2017-11-06 00:00:00.000000",
+                "end_time": "2018-08-24 00:00:00.000000",
+                "total_direction_time": {
+                    "up": "5096414",
+                    "down": "4774947",
+                    "left": "5338970",
+                    "right": "5265148"
+                },
+                "total_idle_time": "4682051",
+                "total_events": "1090"
+            }
+        ]
+    },
+    {
+        "events_per_ip": [
+            {
+                "ip": "83.246.97.145",
+                "total_time": "24318453",
+                "start_time": "2017-11-06 00:00:00.000000",
+                "end_time": "2018-08-15 00:00:00.000000",
+                "total_direction_time": {
+                    "up": "4499086",
+                    "down": "5110792",
+                    "left": "4428933",
+                    "right": "4981369"
+                },
+                "total_idle_time": "5298273",
+                "total_events": "1033"
+            }
+        ]
+    },
+    {
+        "events_per_ip": [
+            {
+                "ip": "246.163.77.109",
+                "total_time": "19503849",
+                "start_time": "2017-11-06 00:00:00.000000",
+                "end_time": "2018-06-20 00:00:00.000000",
+                "total_direction_time": {
+                    "up": "3864449",
+                    "down": "4068638",
+                    "left": "3913262",
+                    "right": "4203383"
+                },
+                "total_idle_time": "3454117",
+                "total_events": "861"
+            }
+        ]
+    },
+    {
+        "events_per_ip": [
+            {
+                "ip": "172.31.43.5",
+                "total_time": "24645594",
+                "start_time": "2017-11-06 00:00:00.000000",
+                "end_time": "2018-08-18 00:00:00.000000",
+                "total_direction_time": {
+                    "up": "4848919",
+                    "down": "5667116",
+                    "left": "4747921",
+                    "right": "4825220"
+                },
+                "total_idle_time": "4556418",
+                "total_events": "1067"
+            }
+        ]
+    },
+    {
+        "events_per_ip": [
+            {
+                "ip": "24.78.105.90",
+                "total_time": "25493765",
+                "start_time": "2017-11-06 00:00:00.000000",
+                "end_time": "2018-08-28 00:00:00.000000",
+                "total_direction_time": {
+                    "up": "4723627",
+                    "down": "5511793",
+                    "left": "5312677",
+                    "right": "5068415"
+                },
+                "total_idle_time": "4877253",
+                "total_events": "1135"
+            }
+        ]
+    }
+]
