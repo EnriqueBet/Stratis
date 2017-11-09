@@ -11,6 +11,5 @@
       The total duration of the idle movements for this IP is 5584247 (not sure about unities)
   </li>
 
-## Comments
 <h2> Comments </h2>
 I wasn't really sure about the unities of the directions duration. Also I think that probably the timestamp of the data is not complete.
