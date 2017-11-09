@@ -12,7 +12,7 @@
 
 import sys,os,json
 import pandas as pd
-from datetime import date
+from datetime import datetime
 
 def __json2dict__(json_file):
     '''
@@ -29,7 +29,7 @@ def __timestamp2date__(time):
     '''
     Converts a timestamp into yyy-mm-dd hh:mm:ss format
     '''
-    return date.fromtimestamp(int(time)).strftime("%Y-%m-%d %H:%M:%S.%f")
+    return datetime.fromtimestamp(int(time)).strftime("%Y-%m-%d %H:%M:%S")
 
 def __createDict__(ip,total,start,end,direction,events):
     '''
@@ -107,19 +107,28 @@ def main():
 
     # Fills a new dictionary with the information of interest
     dict_lst = []
+    events_per_hour = 0
     for ip in ip_lst:
         ip_df = df.loc[df["ip"] == ip]
+        #
         up = ip_df["up"].sum()
         down = ip_df["down"].sum()
         left = ip_df["left"].sum()
         right = ip_df["right"].sum()
         idle = ip_df["idle"].sum()
         directions = [up,down,left,right,idle]
-        total_time = sum(directions)
-        end_time = __timestamp2date__(int(min(ip_df["timestamp"])) + total_time)
-        start_time = __timestamp2date__(min(ip_df["timestamp"]))
+        #
+        end_s = int(max(ip_df["timestamp"]))
+        str_s = int(min(ip_df["timestamp"]))
+        end_time = __timestamp2date__(end_s)
+        start_time = __timestamp2date__(str_s)
+        #
+        total_time = end_s - str_s
+        #
         events = ip_df["total_events"].sum()
+        events_per_hour += events/(total_time/3600)
         dict = __createDict__(ip,total_time,start_time,end_time,directions,events)
+        # Prits the output
         dict_lst.append(dict)
         print(dict,"\n")
 
@@ -130,6 +139,7 @@ def main():
     private_ips = ["10.0.1.2","192.168.1.45","172.78.105.90"]
 
     # Helps to identify the most used direction
+    print("Public IPs actions:")
     for dict in dict_lst:
         if dict["events_per_ip"][0]["ip"] not in private_ips:
             up    += int(dict["events_per_ip"][0]["total_direction_time"]["up"])
@@ -138,7 +148,8 @@ def main():
             right += int(dict["events_per_ip"][0]["total_direction_time"]["right"])
             idle  += int(dict["events_per_ip"][0]["total_idle_time"])
 
-    print("up: %s\ndown: %s\nleft: %s\nright:%s\nidle: %s\n"%(up,down,left,right,idle))
+    print("up:   %s\ndown: %s\nleft: %s\nright:%s\nidle: %s\n"%(up,down,left,right,idle))
+    print("total events per hour:%s"%events_per_hour)
 
 if __name__ == "__main__":
     main()

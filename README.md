@@ -1,7 +1,7 @@
 <h1> Answers </h1>
 <ul>
   <li>1. Find out the total events per hour.
-     <p>Note: Ask about the unities of the duration of the directions</p>
+     <p>The total number of events per hour are around <strong>3861 events/hour </strong> from any IP </p>
   </li>
   <li>2. Identify the most used direction for all public IPs.
       <p>The most used direction was <strong>down</strong> not taking into consideration  the IPs:
@@ -12,6 +12,6 @@
   </li>
 
 <h2> Comments </h2>
-I wasn't really sure about the unities of the directions duration. Also I think that probably the timestamp of the data is not complete.
+I wasn't really sure about the unities of the directions duration, for me it feels too much if they are in seconds.
 
-## Execution time: 4.43 s on an Intel Core i7 - 4700HQ @ 2.40 GHz
+## Execution time: 4.43s on an Intel Core i7 - 4700HQ @ 2.40 GHz
